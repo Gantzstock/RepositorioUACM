@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen_3_XML-II</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+<!--iconos de menu vertical-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!---->
+</head>
+<body>
+    <!-- barra menú lateral izquierda-->
+    <ul class="meuVertical">
+        <!--img avatar-->
+        <div class="divPerfil"><a href="#">
+        <img class="perfil" alt="Avatar" src="imagenes/perfilImg.jpg"></a>
+        <h2 class="perfilTexto">Marco Antonio Gomez Ibarra</h2>
+        <h4 class="perfilTexto"><i>Ingeniería en desarrollo de Software</i></h4>
+        </div>
+        <!--links menu vertical-->
+        <li><a class="linkMenu" href="#AcercaDeMi">Acerca de mi</a></li>
+        <li><a class="linkMenu" href="#Educacion">Educación</a></lis>
+        <li><a class="linkMenu" href="#Conocimientos">Conocimiento</a></lis>
+        <li><a class="linkMenu" href="#MiTrabajo">Mis trabajos</a></li>
+        <li><a class="linkMenu" href="peliculas.html">peliculas</a></li>
+        <li><a class="linkMenu" href="#Contactame">Contactos</a></li>
+        <!--lista redes sociales-->
+        <div class="contenedor">
+        <ul class="luIcon">
+            <li class="liIcon"> <a class="linkIcon" href="https://www.facebook.com/sto0ck/?viewas=100000686899395&show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_transition=0/"><i class="fa fa-facebook-official"style="font-size:20px"></i></a> </li>
+            <li class="liIcon"> <a class="linkIcon" href="#" onclick="alertProximamente()"><i class="fa fa-twitter" style="font-size:20px"></i></a> </li>
+            <li class="liIcon"> <a class="linkIcon" href="https://www.linkedin.com/in/marco-antonio-gomez-611069144/"><i class="fa fa-linkedin" style="font-size:20px"></i></a> </li>
+            <li class="liIcon"> <a class="linkIcon" href="#" onclick="alertProximamente()"><i class="fa fa-dribbble" style="font-size:20px"></i></a> </li>
+            <li class="liIcon"> <a class="linkIcon" href="#" onclick="alertProximamente()"><i class="fa fa-angellist" style="font-size:20px"></i></a> </li>
+        </ul>
+        </div>
+    </ul>
+    <!--******-->
+    <!--***contenido***-->
+    <!--Acerca de mi-->
+    <div id="AcercaDeMi" class="divPrincipal">
+        <h2 style="text-align: center; color: white;">Acerca de mi<hr class="sub" ></h2>
+        <p style="text-align: center; color: white; padding-bottom: 50px;">
+            Hola este es mi portafolio, donde voy a hablar un poco de mi, mis conocimientos y mis trabajos realizados
+        </p>
+        <img class="imgAlignL" src="imagenes/logoUACM.jpg">
+        <h2 style="color: white;">Perfil </h2>
+        <p style="text-align: center,left;  color: white;">
+            Hola soy Marco Gomez, alguien que muy raramente te dejara solo,
+            me gusta ponerme retos personales y no pasar a otro hasta terminarlos
+            la tecnologia en lo que mas me gusta en esta vida pero de igual forma trabajo en todo lo que este a mi alcanse.
+            <br>
+        <button onclick="vermasPerfil('masPerfil')" id="masPerfil"> Leer Mas</button>
+        </p>
+        <p  id="desplegarPerfil" style="display:none; text-align: center,left; color: white;" >
+            Muy bueno para hacer amigos donde quiera que este de la misma tener un liderasgo nato.           
+            <br>
+        <button onclick="vermasPerfil('menosPerfil')" id="menosPerfil"> Leer Menos</button>
+        </p>
+    </div>
+    <hr class="subImg">
+    <!---->
+    <!--Educacion-->
+    <div id="Educacion" class="divPrincipal" >
+        <h2 style="text-align: center; color: white;">Educación<hr class="sub" ></h2>
+        <img class="imgAlignR" src="imagenes/Prepa_Abierta.png">
+        <h2 style="color: white;">Perfil profecional</h2>
+        <p style="text-align: center,left;  color: white;">
+            Bachillerato terminado en preparatoria abierta.
+            Diplomados en:
+                            Administracion de empresas<br>
+                            Ingles<br>
+                            Turismo<br>
+                            Reparacion de PC y Celulares<br>
+
+            Carrera tecnica en Mecatronica en la Escuela Mexicana de Electricidad
+            <br>
+        <button onclick="vermas('mas')" id="mas"> Leer Mas</button>
+        </p>
+        <p  id="desplegar" style="display:none; text-align: center,left; color: white;" >
+            En donde aprendi muchas de las cosas que me hacen ser la persona quien soy hoy en dia, tengo conocimeintos basados en todas y cada una de las antes mencionadas, de forma que puedo y saco todo el jugo posible en todos los lugares quen en los cuales estoy.
+            <br>
+        <button onclick="vermas('menos')" id="menos"> Leer Menos</button>
+        </p>
+    </div>
+    <hr class="subImg">
+    <!--******-->
+    <!--Conocimientos-->
+    <div id="Conocimientos" class="divPrincipal">
+        <h2 style="text-align: center; color: white;">Conocimientos<hr class="sub" ></h2>
+    </div>
+    <div class="container">
+        <div class="box1">
+            <a>          
+                <h2>Recursos</h2>
+                <p>
+                    Aprendiendo a manejar varios recursos virtuales desde los cuales podemos manejar un gran numero de datos siempre listos para la industria necesaria.
+                </p>
+            </a>
+        </div>
+        <div class="box2">
+            <a>
+                <h2>Manejo de base de datos</h2>
+                <p>
+                    Manejo de base de datos SQL server con larabel y php 7 asi como actualizacion en proyectos con los antes mencionados.
+                </p>
+            </a>
+        </div>
+        <div class="box3">
+            <a>
+                <h2>Expereiencia</h2>
+                <p>
+                    Experiencia en larabel con php y SQL asi como en devian 7 y deribados en la secretaria de salud puiblica en el servico social.
+                </p>
+            </a>
+        </div>
+        <div class="box4">
+            <a>
+                <h2>Proyectos</h2>
+                <p>
+                    Actualizacion de proyectos de forma masiba en la secretaria de salud publica asi como creacion de app para la misma.
+                </p>
+            </a>
+        </div>
+    </div>
+    <hr class="subImg">
+<!--******-->
+<!-- Mi trabajo -->
+    <div id="MiTrabajo"class="divPrincipal">
+        <h2 style="text-align: center; color: white;">Mi trabajo<hr class="sub" ></h2>
+        <p style="color: white; text-align: center;">Mi trabajo se divide en diferentes areas, 
+            sin embargo se consideran las mas importantes.</p>
+    </div>
+    <div class="topnav"><b>
+        <a href="#">Trabajo en CTG_CIMENTACIONES</a>
+        <a href="#">Servicio Social</a>
+        <a href="#">Tesis</a>
+        <a href="#">Maestria</a>
+        <a href="#">Becario</a>
+        <a href="#">Articulos</a>
+    </b>
+    </div>
+    <div class="containerMt">
+        <div class="boxMT">
+            <img alt="app apsheet"  src="imagenes/appApsheet.jpeg" >
+        </div>
+        <div class="boxMT1">
+            <img alt="empresa mainbit" src="imagenes/logoMainbit.jpeg" >
+        </div>
+        <div class="boxMT">
+            <img alt="NeuronaMCP" src="imagenes/NeuronaMCP.jpeg">
+        </div>
+        <div class="boxMT1">
+            <img alt="ReconocimientoEmocion" src="imagenes/ReconocimientoEmocion.jpeg">
+        </div>
+       
+    </div>
+    <hr class="subImg">
+  <!--******-->
+    <!-- formulario -->  
+    <div id="Contactame" class="divPrincipal">
+        <h2 style="text-align: center; color: white;">Contactame<hr class="sub" ></h2>
+        <p style="color: white; text-align: center;">Si tienes alguna duda favor de contactarme y responder todas tus dudas.</p>
+    </div>
+    
+    <div>
+        <form>
+            <input name="nombre" type="text"placeholder="Tu Nombre..." required />
+            <input name="correo" type="email"placeholder="Tu email..." required/><br><br>
+            <input name="asunto" type="text"placeholder="Asunto..." required /><br><br>
+            <textarea name="mensaje" placeholder="Tu Mensaje.." required></textarea><br><br>
+            <button style="text-align: center;">Enviar</button>
+        </form>
+    </div>
+    <!--Scripts-->
+    <script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <!--**CSS**-->
+    <link rel="stylesheet" type="text/css" href="styles/stylesPeli.css">
+    <!--**-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Peliculas</title>
+</head>
+<body onload="agregaTabla();">
+    <!-- barra menú lateral izquierda-->
+    <ul class="meuVertical">
+        <!--img avatar-->
+        <div class="divPerfil"><a href="index.html">
+        <img class="perfil" alt="Avatar" src="imagenes/perfilImg.jpg"></a>
+        <h2 class="perfilTexto">Marco Antonio Gomez Ibarra</h2>
+        <h4 class="perfilTexto"><i>Ingeniería en desarrollo de Software</i></h4>
+        </div>
+        <!--links menu vertical-->
+        <li><a class="linkMenu" href="index.html#AcercaDeMi">Acerca de mi</a></li>
+        <li><a class="linkMenu" href="index.html#Educacion">Educación</a></lis>
+        <li><a class="linkMenu" href="index.html#Conocimientos">Conocimiento</a></lis>
+        <li><a class="linkMenu" href="index.html#MiTrabajo">Mis trabajos</a></li>
+        <li><a class="linkMenu" href="#">peliculas</a></li>
+        <li><a class="linkMenu" href="index.html#Contactame">Contactos</a></li>
+        <!--lista redes sociales-->
+        <div class="contenedor">
+        <ul class="luIcon">
+            <li class="liIcon"> <a class="linkIcon" href="https://www.facebook.com/sto0ck/?viewas=100000686899395&show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_transition=0/"><i class="fa fa-facebook-official"style="font-size:20px"></i></a> </li>
+            <li class="liIcon"> <a class="linkIcon" href="#" onclick="alertProximamente()"><i class="fa fa-twitter" style="font-size:20px"></i></a> </li>
+            <li class="liIcon"> <a class="linkIcon" href="https://www.linkedin.com/in/marco-antonio-gomez-611069144/"><i class="fa fa-linkedin" style="font-size:20px"></i></a> </li>
+            <li class="liIcon"> <a class="linkIcon" href="#" onclick="alertProximamente()"><i class="fa fa-dribbble" style="font-size:20px"></i></a> </li>
+            <li class="liIcon"> <a class="linkIcon" href="#" onclick="alertProximamente()"><i class="fa fa-angellist" style="font-size:20px"></i></a> </li>
+        </ul>
+        </div>
+    </ul>
+    <!--******-->
+    <div id="Peliculas" class="divPrincipal">
+        <h2 style="text-align: center; color: white;">Películas<hr class="sub" ></h2>
+        <p style="color: white; text-align: center;">Las 5 películas que mas me han gustado</p>
+    </div>
+    <!--tabla-->
+    <!--iconos agregar eliminar-->
+    <div class="containericono">
+        <div>
+            <img class="add" src="imagenes/Add.png" alt="agregar" onclick="agregarFila()">
+        </div>
+        <div>
+            <img class="add" src="imagenes/delete.png" alt="eleminar" onclick="eliminarFila()">
+        </div>
+    </div>
+    <!---->
+    <div class="containerpeli" >
+        <div class="box1peli">
+            <table id="output1">
+                <thead >
+                    <tr>
+                        <th>Titulo</th>
+                        <th>calificación</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="box2peli">
+            <table id="hovertext1">
+                <thead>
+                    <th>
+                        Portada
+                    </th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>   
+    </div>
+    <!--**JS**-->
+    <script src="scripts/scriptsPeli.js"></script>
+    <!--****-->
+    <!--Scripts-->
+    <script src="scripts/script.js"></script>
+</body>
+</html>
