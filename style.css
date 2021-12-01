@@ -1,0 +1,384 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #000000; 
+  background: -webkit-linear-gradient(to right,#000000, #3D57F0 #000000);
+  background: linear-gradient(to right,#000000, #3D57F0, #000000);
+  margin: 20px;
+  margin-right: 50px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/*estilo para fondo menu vertical*/
+.meuVertical {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: #a63e49;  
+  position: fixed;
+  height: 95%;
+}
+/*estilo foto de perfil*/
+.perfil {
+  margin: 0;
+  padding: 0;  
+  width:150px;
+  border-radius: 50%; 
+}
+.divPerfil {
+  font-size: 80%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+/*estilo texto barra perfil*/
+.perfilTexto {
+  text-align: center;
+  color: white;
+}
+/*estilo links*/
+.linkMenu {
+  display: block;
+  color: white;
+  padding: 15px 16px;
+  text-decoration: none;
+  border-top: 1px solid #f7f1f1;
+  border-bottom: 1px solid #f7f1f1;
+  font-size : 15px;
+  transition: 0.5s;
+}
+/*estilo cambio de color cursor encima*/
+.linkMenu:hover {
+  background-color: white;
+  color: #a63e49;
+}
+
+/*estilo iconos redes*/
+.luIcon {
+  display: inline;  
+  margin: 0;
+  padding: 0%;
+}
+.liIcon {
+  display:inline-block;
+  padding-top: 0;
+  margin-top: 5%;
+  padding-inline-end: 5%;
+}
+.linkIcon {
+  text-decoration: none;
+  background-color: rgb(100, 0, 40);
+  opacity: 50%;
+  color: white;
+  margin: 0;
+  padding: 35%;
+  border: 300px;
+}
+.linkIcon:hover {
+  color: #a63e49;
+  background-color: white;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  padding: 30%;
+  border: 300px;
+  transition: 0.5s;
+}
+/*******/
+/*Contenido principal*/
+.divPrincipal {
+    height: auto;
+    margin-left:25%;
+    padding:1px 16px;
+    text-align: justify;
+}
+/*quitando margenes de hr*/
+hr {
+    margin: 0%;
+    border-top: 2px;
+    border: none;
+}
+/*estilo subrayado titulos*/
+.sub {
+    margin: auto;
+    margin-top: 10px;
+    width: 5%;
+    
+    border-top: 5px solid #a63e49;
+}
+/*estilo separador final de tema*/
+.subImg {
+    margin: 0;
+    margin-left: auto;
+    margin-right: 1%;
+    margin-top: 0;
+    width: 73%;
+    opacity: 50%;
+    border-top: 3px solid #5f4e50;
+}
+/*aliniacion y espaciado de imagen*/
+.imgAlignL {
+    float: left;
+    width: 25%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 2%;
+}
+.imgAlignR {
+    border-radius: 2%;
+    float: right;
+    width: 45%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+/*estilo de boton contenido central*/
+button {
+    color: #272727;
+    padding: 8px 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size : 20px;
+}
+button:hover {
+    background-color: #a63e49;
+    color: white;
+    padding: 8px 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size : 20px;
+    border: 0px;
+    transition: 0.5s;
+}
+/*******/
+/*estilo conocimientos 2x2*/
+.container {
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left:30%;
+    padding-top: 20px;
+    padding-bottom: 2%;
+    display:grid ;
+    grid-template-columns: 450px 450px;
+    grid-template-rows: 350px 350px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.box1 {
+    background-color:#333;
+    background-image: url("/imagenes/first-white-icon.png");
+    background-repeat:no-repeat;
+    color:#fff;
+    display:flex;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 0%;
+    padding-top: 20%;
+    padding-left: 10%;
+    padding-bottom: 0%;
+    padding-right: 10%;
+    background-position: 10% 10%; 
+}
+.box1:hover {
+    background-image: url("/imagenes/first-main-icon.png");
+    background-repeat:no-repeat;
+    background-color:white;
+    color:black;
+    transition: 0.8s;
+    cursor:default;
+}
+.box2 {
+    background-color:#333;
+    background-image: url("/imagenes/second-white-icon.png");
+    background-repeat:no-repeat;
+    color:#fff;
+    display:flex;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 0%;
+    padding-top: 20%;
+    padding-left: 10%;
+    padding-bottom: 0%;
+    padding-right: 10%;
+    background-position: 10% 10%; 
+}
+.box2:hover {
+    background-image: url("/imagenes/second-main-icon.png");
+    background-repeat:no-repeat;
+    background-color:white;
+    color:black;
+    transition: 0.8s;
+    cursor:default;
+}
+.box3 {
+    background-color:#333;
+    background-image: url("/imagenes/third-white-icon.png");
+    background-repeat:no-repeat;
+    color:#fff;
+    display:flex;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 0%;
+    padding-top: 20%;
+    padding-left: 10%;
+    padding-bottom: 0%;
+    padding-right: 10%;
+    background-position: 10% 10%; 
+}
+.box3:hover {
+    background-image: url("/imagenes/third-main-icon.png");
+    background-repeat:no-repeat;
+    background-color:white;
+    color:black;
+    transition: 0.8s;
+    cursor:default;
+}
+.box4 {
+    background-color:#333;
+    background-image: url("/imagenes/fourth-white-icon.png");
+    background-repeat:no-repeat;
+    color:#fff;
+    display:flex;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 0%;
+    padding-top: 20%;
+    padding-left: 10%;
+    padding-bottom: 0%;
+    padding-right: 10%;
+    background-position: 10% 10%; 
+}
+.box4:hover {
+    background-image: url("/imagenes/fourth-main-icon.png");
+    background-repeat:no-repeat;
+    background-color:white;
+    color:black;
+    transition: 0.8s;
+    cursor:default;
+}
+/*******/
+/*estilo Mi trabajo*/
+.topnav {
+    overflow: hidden;
+    padding-left: 45%;
+    
+  }
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1px 10px;
+    padding-bottom: 0%;
+    text-decoration: none;
+    font-size: 17px;
+}
+.containerMt{
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-top: 8px;
+    margin-left:25%;
+    padding-top: 5px;
+    padding-bottom: 2%;
+    display:grid ;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 250px 300px 200px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+} 
+.boxMT {
+    display:flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 0%;
+    padding-top: 5%;
+    padding-left: 30%;
+    padding-bottom: 0%;
+  }
+.boxMT img{
+    padding-top: 1px;
+    padding-bottom: 5%; 
+    border-bottom: gray 2px solid;
+}
+.boxMT1 {
+    display:flex;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-left: 15%;
+    margin-right: 5%;
+    padding-top: 5%;
+    padding-left: 30%;
+    padding-bottom: 0%;
+  }
+.boxMT1 img{
+    padding-top: 1px;
+    padding-bottom: 5%; 
+    border-bottom: gray 2px solid;
+}
+/*******/
+/*estilo Contacto*/
+/* estilo formulario*/
+form{
+    padding-left: 25%;
+}
+form input[name="nombre"]{
+    background-color: #333;
+    margin-left: 10%;
+    padding: 10px;
+    width: 400px;
+    height: 20px;
+    border: 3px solid rgb(110, 105, 105);
+}
+form input[name="correo"]{
+    background-color: #333;
+    margin-left: 0;
+    padding: 10px;
+    width: 400px;
+    height: 20px;
+    border: 3px solid rgb(110, 105, 105);
+}
+form input[name="asunto"]{
+    background-color: #333;
+    margin-left: 10%;
+    padding: 10px;
+    width: 830px;
+    height: 20px;
+    border: 3px solid rgb(110, 105, 105);
+  }
+  textarea{
+    background-color: #333;
+    margin-left: 10%;
+    padding: 10px;
+    width: 830px;
+    height: 200px;
+    border: 3px solid rgb(110, 105, 105);
+  }
+  
+  form input[type="submit"]{
+    color: #272727;
+    padding: 8px 10px;
+    margin: 4px 2px;
+    margin-left: 46%;
+    cursor: pointer;
+    font-size : 15px;
+  }
+  form input[type="submit"]:hover{
+    background-color: #a63e49;
+    color: white;
+    padding: 8px 10px;
+    margin: 4px 2px;
+    margin-left: 46%;
+    font-size : 15px;
+    border: 0;
+    cursor: pointer;
+    transition: 0.8s;
+  }
